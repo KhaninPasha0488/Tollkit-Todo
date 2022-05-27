@@ -1,9 +1,9 @@
-/*
-.App {
-  padding: 30px;
-  display: flex;
-}
 
+.App {
+  background-color:rgba(116,195,255,0.3);
+  min-height: 100vh;
+}
+/*
 .App > div {
   margin-right: 50px;
 }
