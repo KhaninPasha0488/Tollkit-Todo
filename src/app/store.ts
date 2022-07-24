@@ -13,7 +13,6 @@ export const rootReducer = combineReducers({
     todolists: todolistsReducer,
     tasks: tasksReducer
 })
-// непосредственно создаём store
 //export const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
 export const store = configureStore({
@@ -21,7 +20,7 @@ export const store = configureStore({
     middleware: getDefaultMiddleware => getDefaultMiddleware().prepend(thunkMiddleware)
 })
 
-// а это, чтобы можно было в консоли браузера обращаться к store в любой момент
+// чтобы можно было в консоли браузера обращаться к store в любой момент
 // @ts-ignore
 window.store = store
 
