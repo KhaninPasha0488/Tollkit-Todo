@@ -19,7 +19,7 @@ export const store = configureStore({
     middleware: getDefaultMiddleware => getDefaultMiddleware().prepend(thunkMiddleware)
 })
 
-// чтобы можно было в консоли браузера обращаться к store в любой момент
+// чтобы можно было в консоли браузера обращаться к store в любой момент.
 // @ts-ignore
 window.store = store
 
